@@ -19,13 +19,10 @@
                             <h4>Cari di sini Mas</h4>
                             <div class="card-header-form">
                                 <div class="input-group">
-                                    <input type="text" wire:model="search"
+                                    <input type="text" wire:model.live="search"
                                         class="form-control"
                                         placeholder="Di sini di sini">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-primary" wire:click="search">
-                                            <i class="fas fa-search"></i>
-                                        </button>
                                     </div>
                                 </div>
                             </div>
