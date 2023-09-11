@@ -16,8 +16,6 @@
         <div class="main-wrapper">
             @include('components.header')
 
-            @include('components.sidebar')
-
             {{ $slot }}
 
             @include('components.footer')

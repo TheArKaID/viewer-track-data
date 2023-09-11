@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.1.0",
+        "cybercog/laravel-clickhouse": "dev-master",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.0",
         "laravel/tinker": "^2.7",
@@ -56,6 +57,6 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
