@@ -36,7 +36,7 @@ class Counter extends Component
     public function search()
     {
         $db = new Client(config('clickhouse.connection'));
-        $st = $db->database('default')->select('SELECT * FROM positions WHERE device_id LIKE :search LIMIT 10', ['search' => '%' . $this->search . '%']);
+        $st = $db->database('default')->select('SELECT * FROM positions WHERE device_id LIKE :search order by fix_time desc LIMIT 20', ['search' => '%' . $this->search . '%']);
         $this->data = $st->rows();
         $this->totalRows = $st->countAll();
         $this->currentTotalRows = count($this->data);
